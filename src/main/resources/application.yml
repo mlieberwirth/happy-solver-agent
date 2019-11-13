@@ -1,0 +1,66 @@
+#######################
+# SOLVER-SERVER FEIGN #
+#######################
+solver-server:
+  ribbon:
+    listOfServers: http://localhost:8282
+    ReadTimeout: 1000
+    ConnectTimeout: 1000
+    MaxAutoRetries: 3
+    OkToRetryOnAllOperations: true
+    OkToRetryOnAllErrors: true
+    OkRetryOnConnectionErrors: true
+########
+# PORT #
+########
+server:
+  port: 8300
+#########
+# AGENT #
+#########
+agent:
+  name: Agent-00
+  number-of-threads: 1
+spring:
+###########
+# PROFILE #
+###########
+  profiles: local
+  application:
+    name: happy-solver-agent
+###########
+# MONITOR #
+###########
+  boot:
+    admin:
+      client:
+        url: http://localhost:8283
+        instance:
+          preferIp: true
+############
+# LANGUAGE #
+############
+  mvc:
+    locale: en_US
+    locale-resolver: fixed
+#############
+# ACTURATOR #
+#############
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    git:
+      mode: full
+###########
+# LOGGING #
+###########
+logging:
+  level:
+    ROOT: INFO
+    

@@ -1,0 +1,62 @@
+2019-11-13 22:34:31.850  INFO 10883 --- [main] happysolveragent.AgentLauncher           : The following profiles are active: local
+2019-11-13 22:34:35.072  INFO 10883 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c55e2d3e-eb51-336e-93e8-6b2cde028bfb
+2019-11-13 22:34:35.150  INFO 10883 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'happysolveragent.rest.SolverServerClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-13 22:34:35.410  INFO 10883 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$a6705a17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-13 22:34:35.431  INFO 10883 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$430a0fe2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-13 22:34:36.321  INFO 10883 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8300 (http)
+2019-11-13 22:34:36.406  INFO 10883 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-13 22:34:36.407  INFO 10883 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-13 22:34:36.628  INFO 10883 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-13 22:34:36.631  INFO 10883 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4715 ms
+2019-11-13 22:34:38.640  INFO 10883 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2019-11-13 22:34:38.873  INFO 10883 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'rest-thread-pool'
+2019-11-13 22:34:41.115  INFO 10883 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-11-13 22:34:41.789  INFO 10883 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-13 22:34:41.896  WARN 10883 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-11-13 22:34:41.897  INFO 10883 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-13 22:34:41.910  WARN 10883 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-11-13 22:34:41.911  INFO 10883 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-13 22:34:43.905  INFO 10883 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-11-13 22:34:45.111  INFO 10883 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-13 22:34:45.155  INFO 10883 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-13 22:34:45.230  INFO 10883 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-13 22:34:45.542  INFO 10883 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8300 (http) with context path ''
+2019-11-13 22:34:45.551  INFO 10883 --- [main] happysolveragent.AgentLauncher           : Started AgentLauncher in 16.32 seconds (JVM running for 17.394)
+2019-11-13 22:34:45.879  WARN 10883 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=happy-solver-agent, managementUrl=http://127.0.1.1:8300/actuator, healthUrl=http://127.0.1.1:8300/actuator/health, serviceUrl=http://127.0.1.1:8300/) at spring-boot-admin ([http://localhost:8283/instances]): I/O error on POST request for "http://localhost:8283/instances": Connect to localhost:8283 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8283 [localhost/127.0.0.1] failed: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2019-11-13 22:35:26.471  INFO 10883 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as abc7ee03ca48
+2019-11-13 22:35:26.562  INFO 10883 --- [http-nio-8300-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-13 22:35:26.563  INFO 10883 --- [http-nio-8300-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-13 22:35:26.603  INFO 10883 --- [http-nio-8300-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2019-11-13 22:36:15.591  WARN 10883 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=happy-solver-agent, managementUrl=http://127.0.1.1:8300/actuator, healthUrl=http://127.0.1.1:8300/actuator/health, serviceUrl=http://127.0.1.1:8300/) at spring-boot-admin ([http://localhost:8283/instances]): I/O error on POST request for "http://localhost:8283/instances": Connect to localhost:8283 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8283 [localhost/127.0.0.1] failed: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2019-11-13 22:36:20.050  INFO 10883 --- [Thread-5] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2019-11-13 22:36:20.071  WARN 10883 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:179) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92) [spring-cloud-context-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033) [spring-beans-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945) [spring-context-5.1.10.RELEASE.jar!/:5.1.10.RELEASE]
+
+2019-11-13 22:36:20.075  INFO 10883 --- [Thread-5] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'rest-thread-pool'
