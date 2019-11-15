@@ -10,9 +10,9 @@ import happysolveragent.rest.resources.BinPackingSolution;
 @FeignClient("solver-server")
 public interface SolverServerClient {
 
-	@PostMapping("/solution")
-	void sendSolution(BinPackingSolution solution);
+	@PostMapping("/binpacking/solution")
+	void sendSolution(@RequestBody BinPackingSolution solution);
 
-	@PostMapping("/register")
+	@PostMapping("/agents/register")
 	void register(@RequestBody AgentRegister register);
 }

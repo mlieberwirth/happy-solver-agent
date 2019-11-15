@@ -10,6 +10,12 @@ solver-server:
     OkToRetryOnAllOperations: true
     OkToRetryOnAllErrors: true
     OkRetryOnConnectionErrors: true
+#############
+# SCHEDULER #
+#############
+scheduler:
+  # try to register agent at server each ...
+  register-agent-interval-millis: 5000 # 5 sec
 ########
 # PORT #
 ########
@@ -64,3 +70,4 @@ logging:
   file: logfile-agent.log  
   level:
     ROOT: INFO
+    happysolveragent: DEBUG
