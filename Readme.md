@@ -1,4 +1,5 @@
 # Happy-Solver-Agent
+[![Build Status](https://img.shields.io/travis/mlieberwirth/happy-solver-agent.svg?label=Travis%20CI&logo=travis&style=flat-square)](https://travis-ci.org/mlieberwirth/happy-solver-agent)&nbsp;
 
 Runs optimizations of the [Happy-Solver](https://github.com/mlieberwirth/happy-solver). Is registered by the HappySolver-Server and can have replications to run more algos parallel.
 Current integrated optimizations:
