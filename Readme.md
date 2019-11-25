@@ -36,6 +36,8 @@ The REST-Api is documented by swagger2. If the server is running on localhost wi
 
     http://localhost:8300/swagger-ui.html
 
+## CI
+See [Travis CI](https://travis-ci.org/mlieberwirth/happy-solver-agent?utm_medium=notification&utm_source=github_status)
 
 # TODO
 
