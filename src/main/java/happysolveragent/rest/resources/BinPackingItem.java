@@ -7,5 +7,7 @@ public class BinPackingItem {
 
 	private Long id;
 
+	private String name;
+
 	private Integer amount;
 }
